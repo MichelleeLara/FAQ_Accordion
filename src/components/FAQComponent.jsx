@@ -10,14 +10,14 @@ const FAQComponent = () => {
     setOpenIndex(index)
   }
   console.log(openIndex)
-  return ( <div className="flex flex-col gap-4">
+  return ( <div className="flex flex-col gap-6">
     {Question.map((question, index) => (
       <section className="border-b pb-4" key={index}>
         <div 
           className="flex items-center justify-between gap-3 cursor-pointer"
           onClick={() => ToggleFaq(index)}
         >
-          <h2 className={`text-primary font-bold transition-colors duration-300 ${openIndex === index ? 'text-blue-600' : ''}`}>
+          <h2 className={`text-primary font-bold transition-colors duration-300 ${openIndex === index ? 'text-[#ad28eb]' : ''}`}>
             {question.quetion}
           </h2>
           <img 
