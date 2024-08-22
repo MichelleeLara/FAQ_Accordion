@@ -17,7 +17,7 @@ const FAQComponent = () => {
           className="flex items-center justify-between gap-3 cursor-pointer"
           onClick={() => ToggleFaq(index)}
         >
-          <h2 className={`text-primary font-bold transition-colors duration-300 ${openIndex === index ? 'text-[#ad28eb]' : ''}`}>
+          <h2 className={`text-primary font-bold transition-colors duration-300 ${openIndex === index ? 'text-[#ad28ebf6]' : ''}`}>
             {question.quetion}
           </h2>
           <img 
